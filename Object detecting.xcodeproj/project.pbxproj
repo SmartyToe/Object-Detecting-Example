@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2937B11E2216D68700689760 /* ImgaePicker Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937B11D2216D68700689760 /* ImgaePicker Delegate.swift */; };
 		29A0F79E2214A3210052C58B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F79D2214A3210052C58B /* AppDelegate.swift */; };
 		29A0F7A02214A3210052C58B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F79F2214A3210052C58B /* ViewController.swift */; };
 		29A0F7A32214A3210052C58B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A0F7A12214A3210052C58B /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		29A0F7A82214A3220052C58B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A0F7A62214A3220052C58B /* LaunchScreen.storyboard */; };
 		29A0F7B32214A3220052C58B /* Object_detectingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F7B22214A3220052C58B /* Object_detectingTests.swift */; };
 		29A0F7BE2214A3220052C58B /* Object_detectingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F7BD2214A3220052C58B /* Object_detectingUITests.swift */; };
+		29A0F7CC2214A6290052C58B /* ImgaeAnazlizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F7CB2214A6290052C58B /* ImgaeAnazlizer.swift */; };
+		29A0F7D12214ABD80052C58B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F7CF2214ABD80052C58B /* Inceptionv3.mlmodel */; };
+		29A0F7D32214B8CB0052C58B /* Double extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F7D22214B8CA0052C58B /* Double extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2937B11D2216D68700689760 /* ImgaePicker Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImgaePicker Delegate.swift"; sourceTree = "<group>"; };
 		29A0F79A2214A3210052C58B /* Object detecting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Object detecting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A0F79D2214A3210052C58B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29A0F79F2214A3210052C58B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		29A0F7B92214A3220052C58B /* Object detectingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Object detectingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A0F7BD2214A3220052C58B /* Object_detectingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_detectingUITests.swift; sourceTree = "<group>"; };
 		29A0F7BF2214A3220052C58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A0F7CB2214A6290052C58B /* ImgaeAnazlizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgaeAnazlizer.swift; sourceTree = "<group>"; };
+		29A0F7CF2214ABD80052C58B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		29A0F7D22214B8CA0052C58B /* Double extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2937B11F2216DBF700689760 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29A0F79F2214A3210052C58B /* ViewController.swift */,
+				2937B11D2216D68700689760 /* ImgaePicker Delegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2937B1202216DC1200689760 /* Image Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				29A0F7CB2214A6290052C58B /* ImgaeAnazlizer.swift */,
+			);
+			path = "Image Analyzer";
+			sourceTree = "<group>";
+		};
+		2937B1212216DC2600689760 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				29A0F7D22214B8CA0052C58B /* Double extention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		29A0F7912214A3210052C58B = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +130,11 @@
 		29A0F79C2214A3210052C58B /* Object detecting */ = {
 			isa = PBXGroup;
 			children = (
+				2937B1212216DC2600689760 /* Extention */,
+				2937B1202216DC1200689760 /* Image Analyzer */,
+				2937B11F2216DBF700689760 /* Controller */,
+				29A0F7CD2214ABA50052C58B /* CoreML Models */,
 				29A0F79D2214A3210052C58B /* AppDelegate.swift */,
-				29A0F79F2214A3210052C58B /* ViewController.swift */,
 				29A0F7A12214A3210052C58B /* Main.storyboard */,
 				29A0F7A42214A3220052C58B /* Assets.xcassets */,
 				29A0F7A62214A3220052C58B /* LaunchScreen.storyboard */,
@@ -123,6 +159,14 @@
 				29A0F7BF2214A3220052C58B /* Info.plist */,
 			);
 			path = "Object detectingUITests";
+			sourceTree = "<group>";
+		};
+		29A0F7CD2214ABA50052C58B /* CoreML Models */ = {
+			isa = PBXGroup;
+			children = (
+				29A0F7CF2214ABD80052C58B /* Inceptionv3.mlmodel */,
+			);
+			path = "CoreML Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A0F7D12214ABD80052C58B /* Inceptionv3.mlmodel in Sources */,
 				29A0F7A02214A3210052C58B /* ViewController.swift in Sources */,
+				29A0F7D32214B8CB0052C58B /* Double extention.swift in Sources */,
 				29A0F79E2214A3210052C58B /* AppDelegate.swift in Sources */,
+				29A0F7CC2214A6290052C58B /* ImgaeAnazlizer.swift in Sources */,
+				2937B11E2216D68700689760 /* ImgaePicker Delegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
